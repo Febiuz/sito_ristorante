@@ -3,7 +3,7 @@
 <div align="center">
   <img src="./Preview/home_desktop.png" alt="Versione Desktop" width="600">
   <br>
-  <img src="./Preview/menu_device.png" alt="Versione Mobile" width="250">
+  <img src="./Preview/menu_device.png" alt="Versione Mobile" >
 </div>
 > *Un'esperienza digitale che porta i sapori della tradizione alpina sul web.*
 
