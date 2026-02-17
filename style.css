@@ -35,7 +35,7 @@ body {
 }
 
 .hero{
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('ristorante.webp'); /* Se scrivi del testo bianco sopra un'immagine colorata, 
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('img/ristorante.webp'); /* Se scrivi del testo bianco sopra un'immagine colorata, 
     spesso non si legge nulla. Per risolvere aggiungiamo uno strato scuro direttamente nel CSS usando*/
     background-repeat: no-repeat; /* 2. Impedisce all'immagine di ripetersi se è piccola */
     background-position: center; /* 3. Centra l'immagine sia in orizzontale che in verticale */
@@ -214,7 +214,7 @@ body {
 /* style per chi siamo */
 
 .top{
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('chisiamo.webp');
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('img/chisiamo.webp');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -281,7 +281,7 @@ body {
     margin: 2% 2% 2% 2%;
     border-radius: 12px;
     box-shadow:  -10px 10px 20px rgba(0,0,0,0.5);
-    
+    object-fit: cover;
 }
 
 .type1{
@@ -296,6 +296,100 @@ body {
     max-height: 60%;
 }
 
+/* gift card */ 
+
+.panel{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2% 0% 2% 0%;
+    margin: 0;
+}
+
+.gift{
+    font-family: 'Cormorant SC', serif;
+    background-color: #c19a6b;
+}
+
+.gift h1{
+    font-size: 3rem;
+    color: #4b3128;
+    text-align: center;
+    font-weight: bold;
+    margin: 0;
+    padding-top: 2%;
+}
+
+.gift p{
+    font-size: 1.7rem;
+    font-weight: 600;
+    text-align: center;
+    color:#293133;
+    padding: 2% 20% 0% 20%;
+    margin: 0;
+}
+
+.best{
+    color: rgb(255, 153, 0);
+    font-weight: 700;
+}
+
+.card{
+    display: flex;
+    background-color:aliceblue;
+    max-width: 30%;
+    flex-direction: column;
+    margin: 2% 0% 2% 0%;
+    padding: 2% 2% 0% 2%;
+    box-shadow: -10px 10px 10px rgba(0,0,0,0.5);
+}
+
+.card h2{
+    font-size: 2.5rem;
+    color: #4b3128;
+    margin: 0;
+}
+
+.card h3{
+    font-size: 2rem;
+    color: #4b3128;
+    margin: 0;
+}
+
+.card img{
+    margin-bottom: 5%;
+}
+
+.prezzo-card{
+    font-size: 1.5rem;
+    color: rgb(255, 153, 0);
+    text-align: center;
+    font-weight: bold;
+    padding: 1% 0% 4% 0%;
+}
+
+.termini{
+    background-color: #c19a6b;
+    margin: 0;
+    font-family: 'Cormorant SC', serif;
+    color: #072638;
+    font-weight: 800;
+    padding: 4% 4% 4% 4%;
+}
+
+.termini h2{
+    text-align: center;
+    font-size: 1.7rem;
+    margin: 0;
+}
+
+.termini ul{
+    margin: 0;
+    list-style-type: lower-roman;
+    text-align: center;
+    list-style-position: inside;
+    font-size: 1.2rem;
+}
 
 
 /*footer style */
@@ -325,6 +419,7 @@ body {
 
 .contatti{
     text-decoration: underline;
+    color: rgb(226, 194, 151);
 }
 
 .important{
@@ -365,7 +460,250 @@ body {
 /* 2. La Media Query (La regola speciale) */
 /* Traduzione: "Se la larghezza dello schermo è MASSIMO 768px (dimensione di un tablet/telefono)..." */
 
-@media (max-width: 400px){
+@media (max-width: 1200px){
+    .intro{
+        height: 70vh;
+    }
+
+    .intro h3{
+        font-size: 2rem;
+    }
+
+    .intro p{
+        font-size: 1.4rem;
+    }
+
+    .hero h1 {
+        font-size: 2.7rem; /* Rimpicciolisci il testo */
+    }
+
+    .hero h3 {
+        font-size: 2rem; /* Rimpicciolisci anche il sottotitolo */
+    }
+
+    .hero p{
+        font-size: 1.4rem;
+    }
+
+    .titolo h2{
+        font-size: 1.9rem;
+    }
+
+    .gift h1{
+        font-size: 2rem;
+    }
+
+    .gift p{
+        font-size: 1rem;
+    }
+
+    .card{
+        max-width: 40%;
+    }
+
+    .card h2{
+        font-size: 1.5rem;
+    }
+
+    .card h3{
+        font-size: 1.2rem;
+    }
+
+    .card p{
+        font-size: 1rem;
+    }
+
+    .card-piatto{
+        height: auto;
+        flex: 0 1 350px; 
+    }
+
+    .prezzo-card{
+        font-size: 1.3rem;
+    }
+
+    .termini h2{
+        font-size: 1.3rem;
+    }
+
+    .termini ul{
+        font-size: 0.8rem;
+    }
+
+    .foot h4{
+        font-size: 1rem;
+    }
+
+    .foot p{
+        font-size: 0.6rem;
+    }
+
+    .social a{
+        font-size: 0.6rem;
+    }
+
+
+}
+
+@media (max-width: 900px){
+    .nav{
+        gap: 20px;
+    }
+
+    .hero{
+        height: 60vh;
+    }
+
+    .nav li{
+        font-size: 0.8rem;
+    }
+
+    .hero h1 {
+        font-size: 1.7rem; /* Rimpicciolisci il testo */
+    }
+
+    .hero h3 {
+        font-size: 1.3rem; /* Rimpicciolisci anche il sottotitolo */
+    }
+
+    .hero p{
+        font-size: 0.8rem;
+    }
+
+    .intro{
+        height: 50vh;
+    }
+
+    /* ...allora sovrascrivi queste regole: */
+    .intro h3 {
+        font-size: 1.5rem; /* Rimpicciolisci il testo */
+    }
+
+    .intro p {
+        font-size: 1rem; /* Rimpicciolisci anche il sottotitolo */
+    }
+
+    .gift h1{
+        font-size: 1.5rem;
+    }
+
+    .gift p{
+        font-size: 0.8rem;
+    }
+
+    .card{
+        height: auto;
+    }
+
+    .card h2{
+        font-size: 1.2rem;
+    }
+
+    .card h3{
+        font-size: 0.9rem;
+    }
+
+    .card img{
+        margin-bottom: 5%;
+    }
+
+    .prezzo-card{
+        font-size: 1rem;
+    }
+
+    .card-piatto{
+        height: auto;
+        flex: 0 1 220px; 
+    }
+
+    .card-piatto img{
+        height: 110px; /* Altezza fissa per tenerle ordinate */
+    }
+
+    .card{
+        max-width: 50%;
+    }
+
+    .termini h2{
+        font-size: 1rem;
+    }
+
+    .termini ul{
+        font-size: 0.5rem;
+    }
+
+    .titolo h2{
+        font-size: 1.4rem;
+        margin-bottom: 10px;
+    }
+
+    .titolo p{
+        font-size: 0.75rem;
+    }
+
+    .info-piatto h3 {
+        font-size: 0.85rem;
+    }
+    
+    .info-piatto p {
+        font-size: 0.75rem; /* Testo un filo più piccolo per non appesantire */
+    }
+
+    .prezzo{
+        font-size: 0.7rem;
+        margin: 10px 0px 0px 0px;
+    }
+
+    .type1{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .type2{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container1 img{
+        max-width: 50%;
+    }
+
+    .top h1{
+        font-size: 1.7rem;
+    }
+
+    .container1 h2{
+        font-size: 1.5rem;
+    }
+
+    .container1 p{
+        font-size: 0.8rem;
+    }
+
+    .foot{
+        flex-direction: row;
+        
+        padding: 0;
+        margin: 0;
+        gap: 20px;
+    }
+
+    .foot h4{
+        font-size: 0.5rem;
+    }
+
+    .foot p{
+        font-size: 0.4rem;
+    }
+
+    .social a{
+        font-size: 0.5rem;
+    }
+
+}
+
+
+@media (max-width: 480px){
 
     .nav{
         gap: 20px;
@@ -380,15 +718,15 @@ body {
     }
 
     .hero h1 {
-        font-size: 1rem; /* Rimpicciolisci il testo */
+        font-size: 1.7rem; /* Rimpicciolisci il testo */
     }
 
     .hero h3 {
-        font-size: 1.4rem; /* Rimpicciolisci anche il sottotitolo */
+        font-size: 1.3rem; /* Rimpicciolisci anche il sottotitolo */
     }
 
     .hero p{
-        font-size: 1.1rem;
+        font-size: 0.8rem;
     }
 
     .intro{
@@ -401,7 +739,7 @@ body {
     }
 
     .intro p {
-        font-size: 0.4rem; /* Rimpicciolisci anche il sottotitolo */
+        font-size: 0.55rem; /* Rimpicciolisci anche il sottotitolo */
     }
 
     .titolo h2{
@@ -415,9 +753,8 @@ body {
 
     .card-piatto{
         margin-bottom: 20px;
-        flex: 1 1 150px; 
-        max-width: 200px;
-        max-height: 230px;
+        flex: 0 1 150px; 
+        height: auto;
     }
 
     .card-piatto img {
@@ -433,7 +770,7 @@ body {
     }
     
     .info-piatto p {
-        font-size: 0.5rem; /* Testo un filo più piccolo per non appesantire */
+        font-size: 0.55rem; /* Testo un filo più piccolo per non appesantire */
         margin: 5px 0px 0px 0px;
     }
 
@@ -477,6 +814,44 @@ body {
     .type2{
         flex-direction: column;
         align-items: center;
+    }
+
+    /* gift-card */
+
+    .gift h1{
+        font-size: 1.2rem;
+    }
+
+    .gift p{
+        font-size: 0.7rem;
+    }
+
+    .card{
+        height: auto;
+    }
+
+    .card h2{
+        font-size: 1rem;
+    }
+
+    .card h3{
+        font-size: 0.7rem;
+    }
+
+    .card p{
+        font-size: 0.6rem;
+    }
+    
+    .prezzo-card{
+        font-size: 0.7rem;
+    }
+
+    .termini h2{
+        font-size: 1rem;
+    }
+
+    .termini ul{
+        font-size: 0.5rem;
     }
 
     .foot{
