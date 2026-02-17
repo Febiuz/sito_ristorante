@@ -1,6 +1,10 @@
 # 🏔️ Ristorante del Margaro - Website Project
 
-![Preview del Sito](https://via.placeholder.com/1000x500?text=Inserisci+qui+uno+Screenshot+del+Sito)
+<div align="center">
+  <img src="./preview/desktop.png" alt="Versione Desktop" width="600">
+  <br>
+  <img src="./preview/mobile.png" alt="Versione Mobile" width="250">
+</div>
 > *Un'esperienza digitale che porta i sapori della tradizione alpina sul web.*
 
 ## 🌐 Live Demo
